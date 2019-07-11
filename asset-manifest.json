@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-todo-app/static/css/main.1881f965.chunk.css",
-    "main.js": "/React-todo-app/static/js/main.43355a77.chunk.js",
-    "main.js.map": "/React-todo-app/static/js/main.43355a77.chunk.js.map",
-    "runtime~main.js": "/React-todo-app/static/js/runtime~main.f404b573.js",
-    "runtime~main.js.map": "/React-todo-app/static/js/runtime~main.f404b573.js.map",
-    "static/css/2.31dafeb2.chunk.css": "/React-todo-app/static/css/2.31dafeb2.chunk.css",
-    "static/js/2.9e81d024.chunk.js": "/React-todo-app/static/js/2.9e81d024.chunk.js",
-    "static/js/2.9e81d024.chunk.js.map": "/React-todo-app/static/js/2.9e81d024.chunk.js.map",
-    "index.html": "/React-todo-app/index.html",
-    "precache-manifest.b85fd7a67c86ec3ddcad2d1d6d855c7a.js": "/React-todo-app/precache-manifest.b85fd7a67c86ec3ddcad2d1d6d855c7a.js",
-    "service-worker.js": "/React-todo-app/service-worker.js",
-    "static/css/2.31dafeb2.chunk.css.map": "/React-todo-app/static/css/2.31dafeb2.chunk.css.map",
-    "static/css/main.1881f965.chunk.css.map": "/React-todo-app/static/css/main.1881f965.chunk.css.map"
+    "main.css": "/React-todo/static/css/main.1881f965.chunk.css",
+    "main.js": "/React-todo/static/js/main.dea8d120.chunk.js",
+    "main.js.map": "/React-todo/static/js/main.dea8d120.chunk.js.map",
+    "runtime~main.js": "/React-todo/static/js/runtime~main.d5f1644e.js",
+    "runtime~main.js.map": "/React-todo/static/js/runtime~main.d5f1644e.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/React-todo/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.9e81d024.chunk.js": "/React-todo/static/js/2.9e81d024.chunk.js",
+    "static/js/2.9e81d024.chunk.js.map": "/React-todo/static/js/2.9e81d024.chunk.js.map",
+    "index.html": "/React-todo/index.html",
+    "precache-manifest.68710f3aaf82e81d3e5a265084d93109.js": "/React-todo/precache-manifest.68710f3aaf82e81d3e5a265084d93109.js",
+    "service-worker.js": "/React-todo/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/React-todo/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.1881f965.chunk.css.map": "/React-todo/static/css/main.1881f965.chunk.css.map"
   }
 }
