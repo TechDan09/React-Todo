@@ -1,8 +1,30 @@
 import React from 'react';
-import Header from './Components/Header'
-import Form from './Components/Form'
-import TodoList from './Components/TodoList'
-import axios from 'axios'
+import Particles from 'react-particles-js';
+import Header from './Components/Header';
+import Form from './Components/Form';
+import TodoList from './Components/TodoList';
+import axios from 'axios';
+import './App.css';
+import 'tachyons';
+
+const particlesOptions = {
+      "particles": {
+          "number": {
+              "value": 80
+          },
+          "size": {
+              "value": 2
+          }
+      },
+      "interactivity": {
+          "events": {
+              "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+              }
+          }
+      }
+  }
 
 class App extends React.Component {
   constructor(props) {
@@ -16,7 +38,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos/?_limit=10')
+    axios.get('https://jsonplaceholder.typicode.com/todos/?_limit=3')
       .then(response => this.setState({todos: response.data}))
       .catch(error => console.error('Error:', error))
   }
@@ -34,7 +56,6 @@ class App extends React.Component {
   }
 
   deleteTodo(id) {
-    console.log(id);
     axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
     .then(response => {
       this.setState({
@@ -54,7 +75,6 @@ class App extends React.Component {
 
     axios.post('https://jsonplaceholder.typicode.com/todos/', newTodo)
       .then((response) => {
-        console.log(response);
         this.setState({todos: [...this.state.todos, response.data]});
       })
       .catch((error) => {
@@ -63,11 +83,11 @@ class App extends React.Component {
   }
 
   render (){
-    console.log(this.state.todos);
     return (
-      <div className="container">
-        <div className="todolist-wrapper">
-          <div className="todolist-container">
+      <React.Fragment>
+        <Particles className='particles' params={particlesOptions}/>
+        <div className="todolist-wrapper shadow">
+          <div className="todolist-container mt4 mb4">
             <Header />
             <Form sendToServerUpdateTodosState={this.sendToServerUpdateTodosState} />
             <TodoList 
@@ -77,7 +97,7 @@ class App extends React.Component {
             />
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
